@@ -1,0 +1,106 @@
+/* =============================================
+   Responsive Styles
+   ============================================= */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  :root {
+    --container-max-width: 960px;
+  }
+  
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .section {
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  :root {
+    --container-max-width: 100%;
+    --container-padding: var(--spacing-4);
+  }
+  
+  html {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  h3 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .section {
+    padding-top: var(--spacing-10);
+    padding-bottom: var(--spacing-10);
+  }
+  
+  .section-lg {
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-16);
+  }
+  
+  /* Stack flex containers on mobile */
+  .flex-column-mobile {
+    flex-direction: column;
+  }
+  
+  /* Full width buttons on mobile */
+  .btn-block-mobile {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .container {
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
+  }
+  
+  h1 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .footer,
+  .btn {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}

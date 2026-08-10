@@ -3,9 +3,415 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
+  <meta name="description" content="Ad Network - Connect Advertisers, Publishers, Affiliates, and Traffic Sources" />
+  <title>Ad Network - Premium Advertising Platform</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">AdNetwork</a>
+      
+      <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="navbar-menu" id="navbar-menu">
+        <a href="pages/advertiser.html" class="navbar-link">Advertisers</a>
+        <a href="pages/publisher.html" class="navbar-link">Publishers</a>
+        <a href="pages/affiliate.html" class="navbar-link">Affiliates</a>
+        <a href="pages/traffic-sources.html" class="navbar-link">Traffic Sources</a>
+        <a href="pages/services.html" class="navbar-link">Services</a>
+        <a href="pages/contact.html" class="navbar-link">Contact</a>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-badge">🚀 #1 Global Ad Network Platform</span>
+            <h1>Maximize Your Revenue with <span class="text-gradient">Smart Advertising</span></h1>
+            <p class="hero-description">
+              Connect with premium publishers and advertisers worldwide. Our AI-powered platform 
+              delivers real-time bidding, advanced targeting, and transparent analytics to help 
+              you achieve maximum ROI.
+            </p>
+            <div class="hero-cta">
+              <a href="#get-started" class="btn btn-primary btn-lg">Start Now - Free Setup</a>
+              <a href="#learn-more" class="btn btn-outline btn-lg">View Demo</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">500M+</span>
+                <span class="stat-label">Daily Impressions</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">Active Publishers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Fill Rate</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-placeholder hero-placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#E5E7EB" width="400" height="300"/>
+                <text fill="#9CA3AF" font-family="Inter, sans-serif" font-size="18" text-anchor="middle" x="200" y="140">Dashboard Preview</text>
+                <text fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="200" y="165">Analytics & Reports</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="section section-sm bg-light">
+      <div class="container">
+        <p class="text-center text-muted mb-6 font-medium">TRUSTED BY 10,000+ COMPANIES WORLDWIDE</p>
+        <div class="logos-grid">
+          <div class="logo-placeholder">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#D1D5DB" width="120" height="40" rx="4"/>
+              <text fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="60" y="25">Company A</text>
+            </svg>
+          </div>
+          <div class="logo-placeholder">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#D1D5DB" width="120" height="40" rx="4"/>
+              <text fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="60" y="25">Company B</text>
+            </svg>
+          </div>
+          <div class="logo-placeholder">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#D1D5DB" width="120" height="40" rx="4"/>
+              <text fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="60" y="25">Company C</text>
+            </svg>
+          </div>
+          <div class="logo-placeholder">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#D1D5DB" width="120" height="40" rx="4"/>
+              <text fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="60" y="25">Company D</text>
+            </svg>
+          </div>
+          <div class="logo-placeholder">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#D1D5DB" width="120" height="40" rx="4"/>
+              <text fill="#9CA3AF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="60" y="25">Company E</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Cards Section -->
+    <section class="section" id="solutions">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Our Solutions</span>
+          <h2>Built for Every Player in Digital Advertising</h2>
+          <p class="section-description text-muted text-large">
+            Whether you're buying traffic or monetizing inventory, we have the perfect solution for you.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Advertiser Card -->
+          <div class="solution-card card-featured">
+            <div class="card-icon">
+              <div class="icon-placeholder">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                  <circle fill="#DBEAFE" cx="30" cy="30" r="30"/>
+                  <path fill="#2563EB" d="M30 15L35 25L45 25L37 32L40 42L30 36L20 42L23 32L15 25L25 25Z"/>
+                </svg>
+              </div>
+            </div>
+            <h3>For Advertisers</h3>
+            <p class="card-description">
+              Launch high-performing campaigns across thousands of premium websites. 
+              Target your ideal audience with advanced demographics, geolocation, and behavioral targeting.
+            </p>
+            <ul class="card-features">
+              <li>✓ Real-time campaign optimization</li>
+              <li>✓ Advanced audience targeting</li>
+              <li>✓ Transparent reporting dashboard</li>
+              <li>✓ Multi-format ad support (Display, Video, Native)</li>
+              <li>✓ Fraud detection & prevention</li>
+            </ul>
+            <a href="pages/advertiser.html" class="btn btn-primary btn-block">Start Advertising</a>
+          </div>
+
+          <!-- Publisher Card -->
+          <div class="solution-card">
+            <div class="card-icon">
+              <div class="icon-placeholder icon-secondary">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                  <circle fill="#DCFCE7" cx="30" cy="30" r="30"/>
+                  <rect fill="#10B981" x="18" y="20" width="24" height="20" rx="2"/>
+                </svg>
+              </div>
+            </div>
+            <h3>For Publishers</h3>
+            <p class="card-description">
+              Monetize your website traffic with competitive CPM rates. 
+              Get access to premium demand from top advertisers globally.
+            </p>
+            <ul class="card-features">
+              <li>✓ Highest fill rates in the industry</li>
+              <li>✓ Competitive CPM rates</li>
+              <li>✓ Weekly reliable payments</li>
+              <li>✓ Multiple ad formats</li>
+              <li>✓ Dedicated account manager</li>
+            </ul>
+            <a href="pages/publisher.html" class="btn btn-outline btn-block">Become a Publisher</a>
+          </div>
+
+          <!-- Affiliate Card -->
+          <div class="solution-card">
+            <div class="card-icon">
+              <div class="icon-placeholder icon-accent">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                  <circle fill="#FEF3C7" cx="30" cy="30" r="30"/>
+                  <path fill="#F59E0B" d="M30 18L33 24L39 24L34 28L36 34L30 30L24 34L26 28L21 24L27 24Z"/>
+                </svg>
+              </div>
+            </div>
+            <h3>For Affiliates</h3>
+            <p class="card-description">
+              Join our affiliate program and earn generous commissions. 
+              Promote our platform and get recurring revenue for every referral.
+            </p>
+            <ul class="card-features">
+              <li>✓ Up to 30% commission rate</li>
+              <li>✓ Lifetime recurring earnings</li>
+              <li>✓ Comprehensive tracking system</li>
+              <li>✓ Marketing materials provided</li>
+              <li>✓ Monthly performance bonuses</li>
+            </ul>
+            <a href="pages/affiliate.html" class="btn btn-outline btn-block">Join Affiliate Program</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid Section -->
+    <section class="section section-lg bg-light">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Platform Features</span>
+          <h2>Everything You Need to Succeed</h2>
+          <p class="section-description text-muted text-large">
+            Powerful tools and features designed to maximize your advertising performance.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-image-placeholder">
+              <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#F3F4F6" width="280" height="160" rx="8"/>
+                <rect fill="#2563EB" x="20" y="20" width="80" height="12" rx="4"/>
+                <rect fill="#DBEAFE" x="20" y="45" width="240" height="8" rx="2"/>
+                <rect fill="#DBEAFE" x="20" y="60" width="200" height="8" rx="2"/>
+                <circle fill="#10B981" cx="240" cy="30" r="10"/>
+              </svg>
+            </div>
+            <h4>Real-Time Analytics</h4>
+            <p>Track every impression, click, and conversion with our comprehensive dashboard. Make data-driven decisions instantly.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image-placeholder">
+              <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#F3F4F6" width="280" height="160" rx="8"/>
+                <circle fill="#2563EB" cx="60" cy="60" r="25"/>
+                <circle fill="#3B82F6" cx="140" cy="80" r="30"/>
+                <circle fill="#60A5FA" cx="220" cy="50" r="20"/>
+                <rect fill="#10B981" x="20" y="120" width="60" height="8" rx="4"/>
+              </svg>
+            </div>
+            <h4>AI-Powered Optimization</h4>
+            <p>Our machine learning algorithms automatically optimize your campaigns for maximum ROI and conversion rates.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image-placeholder">
+              <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#F3F4F6" width="280" height="160" rx="8"/>
+                <rect fill="#2563EB" x="40" y="30" width="200" height="100" rx="4"/>
+                <path fill="#10B981" d="M60 100L100 70L140 90L180 50L220 80"/>
+                <circle fill="#EF4444" cx="60" cy="100" r="5"/>
+                <circle fill="#EF4444" cx="100" cy="70" r="5"/>
+                <circle fill="#EF4444" cx="140" cy="90" r="5"/>
+                <circle fill="#EF4444" cx="180" cy="50" r="5"/>
+                <circle fill="#EF4444" cx="220" cy="80" r="5"/>
+              </svg>
+            </div>
+            <h4>Advanced Targeting</h4>
+            <p>Reach your perfect audience with geo-targeting, device targeting, behavioral segments, and custom audiences.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image-placeholder">
+              <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#F3F4F6" width="280" height="160" rx="8"/>
+                <rect fill="#2563EB" x="30" y="40" width="100" height="80" rx="4"/>
+                <rect fill="#3B82F6" x="150" y="40" width="100" height="80" rx="4"/>
+                <text fill="#FFFFFF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="80" y="85">Display</text>
+                <text fill="#FFFFFF" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" x="200" y="85">Video</text>
+              </svg>
+            </div>
+            <h4>Multi-Format Support</h4>
+            <p>Run display banners, video ads, native ads, popunders, and push notifications from a single platform.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image-placeholder">
+              <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#F3F4F6" width="280" height="160" rx="8"/>
+                <path fill="#2563EB" d="M40 80L80 50L120 70L160 40L200 60L240 30"/>
+                <circle fill="#10B981" cx="40" cy="80" r="6"/>
+                <circle fill="#10B981" cx="80" cy="50" r="6"/>
+                <circle fill="#10B981" cx="120" cy="70" r="6"/>
+                <circle fill="#10B981" cx="160" cy="40" r="6"/>
+                <circle fill="#10B981" cx="200" cy="60" r="6"/>
+                <circle fill="#10B981" cx="240" cy="30" r="6"/>
+              </svg>
+            </div>
+            <h4>Fraud Protection</h4>
+            <p>Advanced fraud detection systems ensure 100% valid traffic. Block bots, invalid clicks, and fraudulent sources.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image-placeholder">
+              <svg viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="#F3F4F6" width="280" height="160" rx="8"/>
+                <circle fill="#2563EB" cx="140" cy="60" r="35"/>
+                <text fill="#FFFFFF" font-family="Inter, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" x="140" y="68">24/7</text>
+                <rect fill="#10B981" x="60" y="100" width="160" height="8" rx="4"/>
+              </svg>
+            </div>
+            <h4>24/7 Expert Support</h4>
+            <p>Our dedicated support team is available around the clock to help you optimize campaigns and resolve issues.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section-lg">
+      <div class="container">
+        <div class="stats-container">
+          <div class="stat-card">
+            <span class="stat-icon">📊</span>
+            <span class="stat-value">2.5B+</span>
+            <span class="stat-label">Monthly Ad Impressions</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🌍</span>
+            <span class="stat-value">150+</span>
+            <span class="stat-label">Countries Covered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">👥</span>
+            <span class="stat-value">10K+</span>
+            <span class="stat-label">Active Clients</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">💰</span>
+            <span class="stat-value">$50M+</span>
+            <span class="stat-label">Paid to Publishers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-lg cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Grow Your Business?</h2>
+          <p class="cta-description">
+            Join thousands of advertisers and publishers who trust our platform. 
+            Get started today with free setup and instant approval.
+          </p>
+          <div class="cta-buttons">
+            <a href="#signup" class="btn btn-primary btn-lg">Create Free Account</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="d-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-8);">
+        <div>
+          <h4 style="color: var(--color-white);">AdNetwork</h4>
+          <p class="text-small text-muted">Connecting advertisers and publishers worldwide with cutting-edge technology.</p>
+        </div>
+        
+        <div>
+          <h5 style="color: var(--color-white);">Platform</h5>
+          <ul class="d-flex flex-column gap-2">
+            <li><a href="pages/advertiser.html">Advertisers</a></li>
+            <li><a href="pages/publisher.html">Publishers</a></li>
+            <li><a href="pages/affiliate.html">Affiliates</a></li>
+            <li><a href="pages/traffic-sources.html">Traffic Sources</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h5 style="color: var(--color-white);">Company</h5>
+          <ul class="d-flex flex-column gap-2">
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h5 style="color: var(--color-white);">Legal</h5>
+          <ul class="d-flex flex-column gap-2">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-6" style="border-top: 1px solid var(--color-gray-800);">
+        <p class="text-small text-muted text-center">&copy; 2024 AdNetwork. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
