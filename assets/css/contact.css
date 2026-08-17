@@ -1,0 +1,77 @@
+/* Contact Page Specific Styles */
+.contact-hero {
+  background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-primary) 100%);
+  color: var(--color-white);
+}
+.contact-hero .hero-text h1,
+.contact-hero .hero-text p {
+  color: var(--color-white);
+}
+.contact-hero .hero-description {
+  color: rgba(255, 255, 255, 0.94);
+}
+.contact-hero .hero-image .image-placeholder {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--spacing-8);
+  align-items: start;
+}
+.contact-panel,
+.contact-sidebar {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-8);
+}
+.contact-form .form-group {
+  display: grid;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-6);
+}
+.contact-form label {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-700);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-4);
+  font-size: var(--font-size-base);
+  background: var(--color-gray-50);
+  color: var(--color-gray-900);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+.contact-card {
+  margin-bottom: var(--spacing-6);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  background: var(--color-gray-50);
+}
+.contact-card h3 {
+  margin-bottom: var(--spacing-4);
+}
+.contact-card p,
+.contact-card a {
+  color: var(--color-gray-700);
+  line-height: var(--line-height-relaxed);
+}
+.contact-card a:hover {
+  color: var(--color-primary-dark);
+}
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

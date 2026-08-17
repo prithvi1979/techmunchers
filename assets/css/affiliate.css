@@ -1,0 +1,179 @@
+/* =============================================
+   Affiliate Page Specific Styles
+   ============================================= */
+
+.affiliate-hero {
+  background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-warning) 100%);
+  color: var(--color-white);
+}
+
+.affiliate-hero .hero-text h1,
+.affiliate-hero .hero-text p {
+  color: var(--color-white);
+}
+
+.affiliate-hero .hero-description {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.affiliate-hero .hero-stats .stat-number {
+  color: var(--color-accent);
+}
+
+.affiliate-hero .hero-stats .stat-label {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.affiliate-hero .hero-image .image-placeholder {
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.affiliate-benefits-grid,
+.commission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-8);
+}
+
+.commission-card,
+.feature-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-8);
+  transition: all var(--transition-base);
+}
+
+.commission-card:hover,
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.commission-card.featured {
+  border: 2px solid var(--color-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.commission-icon,
+.feature-icon {
+  margin-bottom: var(--spacing-6);
+}
+
+.commission-icon svg,
+.feature-icon svg {
+  width: 60px;
+  height: 60px;
+}
+
+.commission-card h4,
+.feature-card h4 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-3);
+}
+
+.commission-desc {
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-6);
+  font-size: var(--font-size-sm);
+}
+
+.commission-features,
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.commission-features li,
+.feature-list li {
+  padding: var(--spacing-2) 0;
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.commission-features li:last-child,
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-12);
+}
+
+.step-item {
+  flex: 1;
+  min-width: 220px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-8);
+  text-align: center;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  border-radius: 50%;
+  margin-bottom: var(--spacing-4);
+}
+
+.step-item h4 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-2);
+}
+
+.step-item p {
+  color: var(--color-gray-600);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--color-warning) 0%, var(--color-secondary) 100%);
+  color: var(--color-white);
+}
+
+.cta-description {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-placeholder {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+}

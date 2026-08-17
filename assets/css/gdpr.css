@@ -1,0 +1,24 @@
+/* GDPR Page Specific Styles */
+.gdpr-hero {
+  background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-accent) 100%);
+  color: var(--color-white);
+}
+.gdpr-hero .hero-text h1,
+.gdpr-hero .hero-text p {
+  color: var(--color-white);
+}
+.gdpr-hero .hero-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+.feature-list li {
+  padding: var(--spacing-2) 0;
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+}
+.text-small {
+  color: var(--color-gray-500);
+}
